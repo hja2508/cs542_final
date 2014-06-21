@@ -1,0 +1,22 @@
+\section{Introduction}
+
+Recent advances in cloud and distributed computing enabled Big Data 
+processing. Today, processing big data generally falls under the category 
+of statistical inferencing, e.g., predicting congestion with traffic data 
+in the road network. The bottleneck is mainly the system I/O capacity for 
+reading and writing data. The computation applied to individual items is 
+relatively simple compared to the amount of data to process. 
+
+However, big data processing will ultimately require large scale 
+optimizations in the future. For example, one might want to optimize the 
+traffic light system of an entire city using predictions. 
+Unfortunately, the traditional optimization algorithms are fundamentally hard to parallelize. These algorithms are hard to scale and cannot run on existing cloud environment. 
+
+In recent years, several abstractions using belief propagation (BP), a popular class of distributed machine learning algorithm, to 
+parallelize linear optimizations have been proposed~\cite{BPLP, BPLPmatching}. 
+Several well known optimization problems - the matching problem~\cite{BPmatching} and min-cost network flow problem~\cite{BPflow} - were relaxed to a Linear Program (LP) then solved through BP in certain cases. 
+
+The goal of this research is to develop a practical system that runs on modern cloud environments, such as Amazon EC2, for parallel, distributed optimizations on maximum weight matching (MWM) problems. 
+We plan to enhance recent theoretical developments on BP for large-scale linear optimizations and and develop a cloud-based software to solve MWM problems using the power of large-scale cloud computing.
+
+To deal with implementation issues on distributed environment, we used ZooKeeper, a centralized service for maintaining configuration information and providing distributed synchronization and group services~\cite{ZooKeeper}.

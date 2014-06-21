@@ -1,0 +1,35 @@
+
+\section{Background}
+
+\subsection{Belief Propagation}
+Belief Propagation, also known as \textbf{sum-product message passing} is a
+message passing algorithm for performing inference on graphical models. 
+Each edge associates a message with each direction, which is updated using incoming messages. 
+Messages are updated until convergence, and then beliefs are calculated from each node. 
+%\subsection{Weighted matching and its LP relaxation}
+%\subsection{Max-product for weighted matching}
+\subsection{Simplified Max-product for weighted matching}
+\begin{itemize}
+\item
+
+%\begin{displaymath}\int^b_af(t)dt = G(b) - G(a).\end{displaymath}
+%\begin{equation}\sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f\end{equation}
+
+\textbf{(INIT)} Set $t$=0 and initialize each $a_{i \rightarrow j}^0$ = 0
+\item
+\textbf{(ITER)} Iteratively compute new messages until convergence as follows: ($y_+$ = max(0, $y$))
+\begin{displaymath}
+a_{i \rightarrow j}^{t+1} = max_{k \in N(i)-j} (w_{ik} - a_{k \rightarrow i}^{t})_+
+\end{displaymath}
+\item
+\textbf{(ESTIM)} Upon convergence, output estimate $\hat{x}_{(i,j)}$ is, respectively, >, <, or = $w_{ij}$.
+\end{itemize}
+
+\subsection{ZooKeeper}
+ZooKeeper is a software project of the Apache Software Foundation, providing an open source distributed configuration service, synchronization service, and naming registry for large distributed systems. 
+
+ZooKeeper nodes store their data in a hierarchical name space, much like a file system or a tree data structure. Clients can read and write from/to the nodes and in this way have a shared configuration service. 
+
+ZooKeeper is used in many applications such as naming service, configuration management, leader election, etc.
+
+

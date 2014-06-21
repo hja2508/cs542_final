@@ -1,35 +1,39 @@
 \begin{thebibliography}{1}
 
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
+\bibitem{BPLP}
+M.~C. Andrew E.~Gelfand, Jinwoo~Shin.
+\newblock Belief propagation for linear programming.
+\newblock {\em ISIT}, pages 2249--2253, 2013.
 
-\bibitem{braams:babel}
-J.~Braams.
-\newblock Babel, a multilingual style-option system for use with latex's
-  standard document styles.
-\newblock {\em TUGboat}, 12(2):291--301, June 1991.
+\bibitem{BPflow}
+Y.~W. D.~Gamarnik, D.~Shah.
+\newblock "belief propagation for min-cost network flow: convergence \&
+  correctness".
+\newblock {\em SODA}, pages 279--292, 2010.
 
-\bibitem{clark:pct}
-M.~Clark.
-\newblock Post congress tristesse.
-\newblock In {\em TeX90 Conference Proceedings}, pages 84--89. TeX Users Group,
-  March 1991.
+\bibitem{powerGraph}
+Y.~L. H. G. D. B. C.~G. J, Gonzalez.
+\newblock Powergraph: Distributed graph-parallel computation on natural graphs.
+\newblock In {\em Proceedings of the 10th USENIX conference on Operating
+  systems design and implementation}. OSDI, 2012.
 
-\bibitem{herlihy:methodology}
-M.~Herlihy.
-\newblock A methodology for implementing highly concurrent data objects.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
+\bibitem{BPmatching}
+M.~S. M.~bayati, D.~shah.
+\newblock Max-product for maximum weight matching: Convergence, correctness,
+  and lp duality.
+\newblock {\em IEEE Transactions on Information Theory}, 54(3):1241--1251,
+  2008.
 
-\bibitem{Lamport:LaTeX}
-L.~Lamport.
-\newblock {\em LaTeX User's Guide and Document Reference Manual}.
-\newblock Addison-Wesley Publishing Company, Reading, Massachusetts, 1986.
+\bibitem{ZooKeeper}
+F.~P. J. B.~R. Patrick~Hunt, Mahadev~Konar.
+\newblock Zookeeper: Wait-free coordination for internet-scale systems.
+\newblock In {\em Proceedings of the 2010 USENIX conference on USENIX annual
+  technical conference}. USENIX, 2010.
 
-\bibitem{salas:calculus}
-S.~Salas and E.~Hille.
-\newblock {\em Calculus: One and Several Variable}.
-\newblock John Wiley and Sons, New York, 1978.
+\bibitem{BPLPmatching}
+A.~W. Sujay~Sanghavi, Dmitry~Malioutov.
+\newblock Belief propagation and lp relaxation for weighted matching in general
+  graphs.
+\newblock {\em IEEE Transactions on Information Theory}, 57(4), 2011.
 
 \end{thebibliography}

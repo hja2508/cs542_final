@@ -3,44 +3,61 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
+Too many commas in name 1 of "Patrick Hunt, Mahadev Konar, Flavio P. Junqueira, Benjamin Reed" for entry ZooKeeper
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "Patrick Hunt, Mahadev Konar, Flavio P. Junqueira, Benjamin Reed" for entry ZooKeeper
+while executing---line 1090 of file abbrv.bst
 You've used 6 entries,
             2118 wiz_defined-function locations,
-            537 strings with 4444 characters,
-and the built_in function-call counts, 1813 in all, are:
-= -- 176
-> -- 59
-< -- 1
-+ -- 25
-- -- 18
-* -- 122
-:= -- 303
-add.period$ -- 19
+            539 strings with 4752 characters,
+and the built_in function-call counts, 1852 in all, are:
+= -- 195
+> -- 42
+< -- 2
++ -- 18
+- -- 12
+* -- 97
+:= -- 296
+add.period$ -- 20
 call.type$ -- 6
-change.case$ -- 25
+change.case$ -- 24
 chr.to.int$ -- 0
 cite$ -- 6
-duplicate$ -- 78
-empty$ -- 164
-format.name$ -- 18
-if$ -- 391
+duplicate$ -- 91
+empty$ -- 171
+format.name$ -- 12
+if$ -- 413
 int.to.chr$ -- 0
 int.to.str$ -- 6
-missing$ -- 8
+missing$ -- 6
 newline$ -- 33
 num.names$ -- 12
-pop$ -- 30
+pop$ -- 28
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 18
 quote$ -- 0
-skip$ -- 49
+skip$ -- 66
 stack$ -- 0
-substring$ -- 114
-swap$ -- 14
-text.length$ -- 1
+substring$ -- 129
+swap$ -- 28
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
+type$ -- 24
 warning$ -- 0
-while$ -- 17
+while$ -- 19
 width$ -- 7
-write$ -- 69
+write$ -- 68
+(There were 8 error messages)
