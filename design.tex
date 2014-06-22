@@ -17,6 +17,8 @@ Therefore, we need to construct balanced subgraphs that minimize number of edges
 PowerGraph achieves balanced partitioning by considering the strongest feature of natural graphs: having highly skewed power-law degree distributions.~\cite{powerGraph} 
 We used the same partitioning strategy and stored each part as a separate file on a distributed storage system (e.g., HDFS, Amazon S3).
 
+\subsection{Initialization} 
+
 \subsection{Configuration management}
 The system needs management during the computation. 
 At initialization phase, the graph is torn down to several atom graphs and mapped to each machines. 

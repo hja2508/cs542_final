@@ -2,13 +2,23 @@
 \section{Background}
 
 \subsection{Belief Propagation}
-Belief Propagation, also known as \textbf{sum-product message passing} is a
-message passing algorithm for performing inference on graphical models. 
-Each edge associates a message with each direction, which is updated using incoming messages. 
-Messages are updated until convergence, and then beliefs are calculated from each node. 
+Belief Propagation is a message passing algorithm
+for performing inference on graphical models. It is common used in artificial intelligence and information theory and has demonstrated empirical success in numerous applications.
+
+On the graph, messages are associated on each edge with each direction and updated until convergence.
+Each node has a \textbf{belief}, which is calculated from incoming messages. 
+Those beliefs are used as decision variable of nodes and edges. 
+
 %\subsection{Weighted matching and its LP relaxation}
 %\subsection{Max-product for weighted matching}
-\subsection{Simplified Max-product for weighted matching}
+\subsection{Simplified Max-product for weighted matching~\cite{BPLPmatching}}
+Let $m_{i \rightarrow j}$ denote the messsage at time $t$, node $i$ and edge $e in E_i$. 
+For every pair of neighbors $i$ and $j$, let $e = (i, j)$ be the edge connecting the two,
+and define 
+\begin{displaymath}
+a_{i \rightarrow j}^t = log(\frac{m_{i \rightarrow e}^t[0]}{m_{i \rightarrow e}^t[1]})
+\end{displaymath}
+
 \begin{itemize}
 \item
 
@@ -25,11 +35,16 @@ a_{i \rightarrow j}^{t+1} = max_{k \in N(i)-j} (w_{ik} - a_{k \rightarrow i}^{t}
 \textbf{(ESTIM)} Upon convergence, output estimate $\hat{x}_{(i,j)}$ is, respectively, >, <, or = $w_{ij}$.
 \end{itemize}
 
-\subsection{ZooKeeper}
-ZooKeeper is a software project of the Apache Software Foundation, providing an open source distributed configuration service, synchronization service, and naming registry for large distributed systems. 
-
-ZooKeeper nodes store their data in a hierarchical name space, much like a file system or a tree data structure. Clients can read and write from/to the nodes and in this way have a shared configuration service. 
-
-ZooKeeper is used in many applications such as naming service, configuration management, leader election, etc.
+This routine? ---- when the extreme points of the matching LP polytope are integral. In other words, if LP doesn't have any fractional optima. 
 
 
+
+\subsection{Hungarian algorithm}
+The Hungarian algorithm is a combinatorial optimization algorithm that solves the assignment problem in polynomial time. 
+The time complexity of the original algorithm was $O(n^4)$, modified to achieve $O(n^3)$ running time. 
+
+If we formulate the problem using a bipartite graph, $G=(S, T;E)$ with $n$ vertices on one side ($S$) and same number of vertices on the other side ($T$), and each edge has a nonnegative weight $w(i, j)$, the way to find a perfect matching with minimum cost is as below. (Edges with 0 weight are added to make the graph complete in advance)
+
+Let $y:(S \cup T) \mapsto \Re$ a \textbf{potential} if $y(i) + y(j) \leq c(i,j)$ for each $i \in S, j \in T$.
+
+\subsection{Blossom algorithm}
