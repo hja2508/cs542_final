@@ -35,16 +35,20 @@ a_{i \rightarrow j}^{t+1} = max_{k \in N(i)-j} (w_{ik} - a_{k \rightarrow i}^{t}
 \textbf{(ESTIM)} Upon convergence, output estimate $\hat{x}_{(i,j)}$ is, respectively, >, <, or = $w_{ij}$.
 \end{itemize}
 
-This routine? ---- when the extreme points of the matching LP polytope are integral. In other words, if LP doesn't have any fractional optima. 
+It guarantees convergence when the extreme points of the matching LP polytope are integral. In other words, if LP doesn't have any fractional optima. 
 
 
-
-\subsection{Hungarian algorithm}
+\subsection{Hungarian algorithm~\cite{wiki_hungarian}}
 The Hungarian algorithm is a combinatorial optimization algorithm that solves the assignment problem in polynomial time. 
 The time complexity of the original algorithm was $O(n^4)$, modified to achieve $O(n^3)$ running time. 
 
 If we formulate the problem using a bipartite graph, $G=(S, T;E)$ with $n$ vertices on one side ($S$) and same number of vertices on the other side ($T$), and each edge has a nonnegative weight $w(i, j)$, the way to find a perfect matching with minimum cost is as below. (Edges with 0 weight are added to make the graph complete in advance)
 
 Let $y:(S \cup T) \mapsto \Re$ a \textbf{potential} if $y(i) + y(j) \leq c(i,j)$ for each $i \in S, j \in T$.
+The value of potential $y$ is $\sum_{v \in S \cup T}^{y(v)}$. The Hungarian method finds a perfect matching of tight edges: an edge $ij$ is called tight for a potential $y$ if $y(i) + y(j) = c(i,j)$. Let $G_y$ denote the subgraph of tight edges. The cost of a perfect matching in $G_y$ equals the value of $y$.
 
-\subsection{Blossom algorithm}
+\subsection{Blossom algorithm~\cite{wiki_blossom}}
+The blossom algorithm is an algorithm for constructing maximum matchings on graphs.
+The matching is constructed by iteratively improving an initial empty matching along augmenting paths in the graph. 
+Micali and Vazirani~\cite{blossom} showed an algorithm that constructs maximum matching in $O(|E||V|^{1/2})$ time.
+

@@ -3,61 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-Too many commas in name 1 of "Patrick Hunt, Mahadev Konar, Flavio P. Junqueira, Benjamin Reed" for entry ZooKeeper
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J, Gonzalez, Y. Low, H. Gu, D. Bickson, C. Guestrin" for entry powerGraph
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "Patrick Hunt, Mahadev Konar, Flavio P. Junqueira, Benjamin Reed" for entry ZooKeeper
-while executing---line 1090 of file abbrv.bst
-You've used 6 entries,
+Warning--entry type for "wiki_hungarian" isn't style-file defined
+--line 19 of file sigproc.bib
+Warning--entry type for "sparseMatrix" isn't style-file defined
+--line 31 of file sigproc.bib
+Warning--entry type for "wiki_blossom" isn't style-file defined
+--line 39 of file sigproc.bib
+Warning--to sort, need author or key in sparseMatrix
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            539 strings with 4752 characters,
-and the built_in function-call counts, 1852 in all, are:
-= -- 195
-> -- 42
-< -- 2
-+ -- 18
-- -- 12
-* -- 97
-:= -- 296
+            540 strings with 4612 characters,
+and the built_in function-call counts, 2230 in all, are:
+= -- 225
+> -- 50
+< -- 3
++ -- 24
+- -- 14
+* -- 108
+:= -- 339
 add.period$ -- 20
-call.type$ -- 6
-change.case$ -- 24
+call.type$ -- 8
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 91
-empty$ -- 171
-format.name$ -- 12
-if$ -- 413
+cite$ -- 9
+duplicate$ -- 102
+empty$ -- 211
+format.name$ -- 14
+if$ -- 500
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 28
+int.to.str$ -- 8
+missing$ -- 5
+newline$ -- 39
+num.names$ -- 14
+pop$ -- 40
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 23
 quote$ -- 0
-skip$ -- 66
+skip$ -- 102
 stack$ -- 0
-substring$ -- 129
-swap$ -- 28
-text.length$ -- 2
+substring$ -- 161
+swap$ -- 35
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
-warning$ -- 0
-while$ -- 19
-width$ -- 7
-write$ -- 68
-(There were 8 error messages)
+type$ -- 32
+warning$ -- 1
+while$ -- 23
+width$ -- 9
+write$ -- 76
+(There were 4 warnings)

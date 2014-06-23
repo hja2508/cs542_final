@@ -4,11 +4,8 @@
 %We identified several limitations in existing optimization algorithms. 
 We idntified the limitation in existing optimization algorithms that they're structurally not parallelizable. We used BP, a message passing machine learnng algorithm has parallel structure, to solve the MWM problem in distributed environment. 
 
-The abstraction uses a \textbf{data graph} as a computational model. Updates are done with the local computation on each vertex. Parallel \textbf{scheduler} manages the scheduling of dynamic iterative parallel computation.  
+We had two major challenges: speedup and multiple optima. For speedup, we initialized messages to half of their edge weights. And for multiple optima, we are using noise temporally to make the routine converge. 
 
-To manage the task/graph assignment, scheduler and faults we used ZooKeeper, the service enables easier management of distributed configuration and synchronization. 
-
-Since ZooKeeper makes dns-based assignment, the load balancing still remains challenging. 
-
+The algorithm worked pretty well on the ramdom dataset, but still have some problems with realistic dataset. We leave further approaches to future work. 
 
 %\end{document}  % This is where a 'short' article might terminate

@@ -1,5 +1,8 @@
 \begin{thebibliography}{1}
 
+\bibitem{sparseMatrix}
+The university of florida sparse matrix collection.
+
 \bibitem{BPLP}
 M.~C. Andrew E.~Gelfand, Jinwoo~Shin.
 \newblock Belief propagation for linear programming.
@@ -11,12 +14,6 @@ Y.~W. D.~Gamarnik, D.~Shah.
   correctness".
 \newblock {\em SODA}, pages 279--292, 2010.
 
-\bibitem{powerGraph}
-Y.~L. H. G. D. B. C.~G. J, Gonzalez.
-\newblock Powergraph: Distributed graph-parallel computation on natural graphs.
-\newblock In {\em Proceedings of the 10th USENIX conference on Operating
-  systems design and implementation}. OSDI, 2012.
-
 \bibitem{BPmatching}
 M.~S. M.~bayati, D.~shah.
 \newblock Max-product for maximum weight matching: Convergence, correctness,
@@ -24,16 +21,25 @@ M.~S. M.~bayati, D.~shah.
 \newblock {\em IEEE Transactions on Information Theory}, 54(3):1241--1251,
   2008.
 
-\bibitem{ZooKeeper}
-F.~P. J. B.~R. Patrick~Hunt, Mahadev~Konar.
-\newblock Zookeeper: Wait-free coordination for internet-scale systems.
-\newblock In {\em Proceedings of the 2010 USENIX conference on USENIX annual
-  technical conference}. USENIX, 2010.
+\bibitem{blossom}
+V.~V. Micali~Silvio.
+\newblock An {$O(V^{1/2}E)$} algorithm for finding maximum matching in general
+  graphs.
+\newblock {\em 21st Annual Symposium on Foundations of Computer Science}, pages
+  17--27, 1980.
 
 \bibitem{BPLPmatching}
 A.~W. Sujay~Sanghavi, Dmitry~Malioutov.
 \newblock Belief propagation and lp relaxation for weighted matching in general
   graphs.
 \newblock {\em IEEE Transactions on Information Theory}, 57(4), 2011.
+
+\bibitem{wiki_blossom}
+Wikipedia.
+\newblock Blossom algorithm.
+
+\bibitem{wiki_hungarian}
+Wikipedia.
+\newblock Hungarian algorithm.
 
 \end{thebibliography}

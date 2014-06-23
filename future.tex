@@ -1,0 +1,25 @@
+\section{Future work}
+
+We saw that just giving noise repeatedly is not effective. 
+Here we suggest two further approaches. 
+
+
+\begin{itemize}
+\item
+Gradual noise
+
+Start with a large noise and decrease it gradually until the sum of all the noises is less than 1.
+For now we're adding noise to unstable edges. 
+The more edges being marked as unstable, the smaller each noise gets, which doesn't make much difference when it is applied. 
+To deal with this problem, by adding a large noise, we move the routine to some state, then by removing previous noise and assigning smaller noise, we get the right solution.
+
+
+\item
+BP-Hungarian algorithm
+
+As figure~\ref{fig:sum_v_iter} shows BP is good at brining the state near to the optima. By applying Hungarian algorithm from the state BP made, we can get the advantages from both. 
+Hungarian algorithm doesn't have the convergence issue with multiple optima. 
+
+
+
+\end{itemize}
